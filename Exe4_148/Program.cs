@@ -48,7 +48,7 @@ namespace Exe4_148
         }
         public void display()
         {
-            Node tmp;
+            Node tmp; 
             if (empty()) //if stack is empty
                 Console.WriteLine("\nStack Empty");
             else
@@ -77,7 +77,12 @@ namespace Exe4_148
                 char ch = Convert.ToChar(sInput == "" ? "68" : sInput);
                 switch (ch)
                 {
-
+                    case '1':
+                        Console.Write("\nEnter a Number:");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        s.push(num);
+                        break;
+                
                 }
             }
 
