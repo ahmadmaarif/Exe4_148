@@ -12,8 +12,27 @@ namespace Exe4_148
         public Node next;
         public Node (int AM, Node n)
         {
+            info = AM;
+            next = n;
+        }
+    }
+    class Stacks
+    {
+        Node top;
+        public Stack()
+        {
+            top = null;
+        }
+        bool empty()
+        {
+            if (top == null)
+                return(true);
+            else
+                return(false);
 
         }
+
+
     }
 }
    
