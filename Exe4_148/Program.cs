@@ -31,7 +31,15 @@ namespace Exe4_148
                 return(false);
 
         }
+        public void pust( int element)
+        {
+            Node fresh;
+            fresh = new Node(element, null);
 
+            fresh.next = top;
+            top = fresh;
+            Console.WriteLine("\n" + element + "pushed");
+        }
 
     }
 }
