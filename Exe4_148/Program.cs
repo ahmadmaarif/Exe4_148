@@ -19,7 +19,8 @@ namespace Exe4_148
     class Stacks
     {
         Node top;
-        public Stack()
+        public Stacks
+            ()
         {
             top = null;
         }
@@ -59,6 +60,14 @@ namespace Exe4_148
                 }
                 Console.WriteLine();
             }
+        }
+        static void Main(string[]args)
+        {
+           Stacks  AM = new Stacks();
+            while (true)
+
+
+
         }
     }
 
