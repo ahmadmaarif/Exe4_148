@@ -40,8 +40,24 @@ namespace Exe4_148
             top = fresh;
             Console.WriteLine("\n" + element + "pushed");
         }
-
+        public void pop()
+        {
+            Console.WriteLine("\n The popped element is :" + top.info);
+            top = top.next;//Make the point to the node in sequence
+        }
+        public void display()
+        {
+            Node tmp;
+            if (empty()) //if stack is empty
+                Console.WriteLine("\nStack Empty");
+            else
+            {
+                
+            }
+        }
     }
+
+    
 }
    
     
