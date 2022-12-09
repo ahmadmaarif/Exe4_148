@@ -10,9 +10,9 @@ namespace Exe4_148
     {
         public int info;
         public Node next;
-        public Node (int AM, Node n)
+        public Node (int i, Node n)
         {
-            info = AM;
+            info = i;
             next = n;
         }
     }
@@ -32,7 +32,7 @@ namespace Exe4_148
                 return(false);
 
         }
-        public void pust( int element)
+        public void push( int element)
         {
             Node fresh;
             fresh = new Node(element, null);
@@ -61,9 +61,10 @@ namespace Exe4_148
                 Console.WriteLine();
             }
         }
-        static void Main(string[]args)
+        static void Main(string[]args
+            )
         {
-           Stacks  AM = new Stacks();
+            Stacks s= new Stacks();
             while (true)
             {
                 Console.WriteLine();
@@ -74,23 +75,31 @@ namespace Exe4_148
                 Console.WriteLine("4. Exit");
                 Console.WriteLine("\nEnter your Choice :");
                 string sInput = Console.ReadLine();
-                char ch = Convert.ToChar(sInput == "" ? "68" : sInput);
-                switch (ch)
+                char ch= Convert.ToChar(sInput=="" ? "0" : sInput);
+                switch(ch)
                 {
                     case '1':
                         Console.Write("\nEnter a Number:");
-                        int num = Convert.ToInt32(Console.ReadLine());
+                        int num=Convert.ToInt32(Console.ReadLine());
                         s.push(num);
                         break;
-                
+                    case '2':
+                        if (s.empty()) ;
+                        {
+                            Console.WriteLine("\nStack Empty");
+                            break;
+                        }
+                        s.pop();
+                        break;
+                    case '3':
+                        s.display();
+                        break;
+                          
                 }
             }
-
-
         }
     }
 
-    
 }
    
     
