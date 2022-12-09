@@ -65,7 +65,21 @@ namespace Exe4_148
         {
            Stacks  AM = new Stacks();
             while (true)
+            {
+                Console.WriteLine();
+                Console.WriteLine("\n***Stacks Menu***\n");
+                Console.WriteLine("1. Push.");
+                Console.WriteLine("2. Pop");
+                Console.WriteLine("3. Display");
+                Console.WriteLine("4. Exit");
+                Console.WriteLine("\nEnter your Choice :");
+                string sInput = Console.ReadLine();
+                char ch = Convert.ToChar(sInput == "" ? "68" : sInput);
+                switch (ch)
+                {
 
+                }
+            }
 
 
         }
