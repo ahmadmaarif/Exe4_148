@@ -52,7 +52,12 @@ namespace Exe4_148
                 Console.WriteLine("\nStack Empty");
             else
             {
-                
+                //Traverse the list from beginning till end
+                for (tmp = top; tmp != null; tmp = tmp.next)
+                {
+                    Console.WriteLine(tmp.info);
+                }
+                Console.WriteLine();
             }
         }
     }
